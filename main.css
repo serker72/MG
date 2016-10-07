@@ -1,0 +1,126 @@
+/*****************************************************************************
+ *  —айт Machine Group
+ *
+ *  Author: Sergey Kerimov
+ *  e-mail: serker72@gmail.com
+ *****************************************************************************/
+
+body {
+    font-family: MyriadPro;
+}
+
+/*    лассы   */
+.container {
+  padding-right: 0px;
+  padding-left: 0px;
+  width: 1200px;
+}
+
+/*   Ёлементы   */
+#wrapper {
+    background-color: #269abc;
+}
+
+#header {
+    height: 220px;
+    background-color: #c0c0c0;
+}
+
+#logo {
+    float: left;
+    width: 470px;
+    height: 145px;
+    background: url('img/logo.png') no-repeat top 24px left 100px;
+}
+
+#contacts {
+    float: left;
+    height: 145px;
+    width: 370px;
+    font-size: 17px;
+}
+
+#contacts_phone {
+    height: 80px;
+    padding: 45px 0 0 48px;
+    background: url('img/i_phone.png') no-repeat top 40px left 0px;
+}
+
+#contacts_mail {
+    height: 65px;
+    padding: 10px 0 0 48px;
+    background: url('img/i_mail.png') no-repeat top 10px left 0px;
+    background-color: #4cae4c;
+}
+
+#search {
+    float: right;
+    width: 360px;
+    height: 145px;
+}
+
+#search_lang {
+    height: 33px;
+    width: 244px;
+    text-align: right;
+}
+
+#search_lang ul {
+}
+
+#search_lang ul li {
+    background: url('img/lang_splitter.png') no-repeat top 0px left 0px;
+    display: inline;
+    list-style-type: none;
+    font-size: 15px;
+    padding: 8px 8px 5px 11px;
+}
+
+#search_lang ul li:first-child {
+    background: none;
+}
+
+#search_lang ul li:last-child {
+    padding: 8px 2px 5px 11px;
+}
+
+#search_find {
+    height: 44px;
+    width: 244px;
+    padding-top: 5px;
+}
+
+#search_str {
+    width: 200px;
+    height: 38px;
+    background-color: #f0efeb;
+}
+
+#search_button {
+    width: 40px;
+    height: 38px;
+    background: url('img/search.png') no-repeat;
+}
+
+#search_call {
+    padding-top: 20px;
+    height: 68px;
+    width: 244px;
+}
+
+#search_call_link {
+    padding: 13px 38px 12px 50px;
+    background-color: #eb3844;
+    font-size: 17px;
+    color: #feffff;
+    text-transform: uppercase;
+}
+
+#content {
+    
+}
+
+#footer {
+    
+}
+
