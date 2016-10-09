@@ -6,14 +6,84 @@
  *****************************************************************************/
 
 body {
-    font-family: MyriadPro;
 }
 
 /*   Классы   */
 .container {
-  padding-right: 0px;
-  padding-left: 0px;
-  width: 1200px;
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 1200px;
+    font-family: MyriadPro;
+}
+
+.navbar-nav > li {
+}
+
+.navbar-nav > li > a {
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #feffff;
+    height: 75px;
+    padding-top: 27px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.navbar-nav > li > a:hover, 
+.navbar-nav > li > a:focus,
+.navbar-nav > li.dropdown.open > a.dropdown-toggle
+{
+    background-color: #eb3844;
+}
+
+.dropdown-menu {
+    height: 165px;
+    width: 450px;
+    background-color: #333333;
+}
+
+ul.dropdown-menu {
+  list-style-position: inside;
+  -moz-column-count: 2; /* Firefox */
+  -webkit-column-count: 2; /* Safari and Chrome */
+  column-count: 2;
+  height: 165px;
+}
+
+.dropdown-menu > li > a {
+    color: #feffff;
+}
+
+.dropdown-menu > li > a:hover, 
+.dropdown-menu > li > a:focus
+{
+    color: #c73741;
+    background-color: #333333;
+}
+
+.carousel-indicators {
+    display: none;
+}
+
+.carousel-caption {
+    width: 490px;
+    height: 450px;
+    top: 0;
+    left: 588px;
+    padding: 120px 40px 25px 35px;
+    background: url('img/slider/caption_background.png') no-repeat;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.carousel-control.left {
+    background: url('img/slider/left.png') no-repeat left 20% top 50%;
+}
+
+.carousel-control.right {
+    background: url('img/slider/right.png') no-repeat right 20% top 50%;
 }
 
 /*   Элементы   */
@@ -23,7 +93,6 @@ body {
 
 #header {
     height: 220px;
-    background-color: #c0c0c0;
 }
 
 #logo {
@@ -50,7 +119,6 @@ body {
     height: 65px;
     padding: 10px 0 0 48px;
     background: url('img/i_mail.png') no-repeat top 10px left 0px;
-    background-color: #4cae4c;
 }
 
 #search {
@@ -116,9 +184,37 @@ body {
     text-transform: uppercase;
 }
 
+#main_menu {
+    background-color: #333333;
+    height: 75px;
+    clear: both;
+    /*padding: 0 100px;*/
+    padding-left: 100px;
+}
+
 #content {
     
 }
+
+/* carousel-example-generic - это id блока со слайдшоу */
+
+/* Здесь задается ширина слайдшоу в пикселях */
+#carousel-example-generic {
+  overflow: hidden; /* Если картинка больше нужной ширины, то она будет скрыта */
+  margin: 0 auto; /* Выравнивание слайдшоу по центру */
+  //max-width: 320px; /* Максимальная ширина слайдшоу в пикселях */
+}
+
+/* Здесь задается высота слайдшоу в пикселях */
+#carousel-example-generic .item {
+  //height: 200px;
+}
+
+/* Данная строчка необходима для того, чтобы изображения было такой же высоты, что и слайд */
+#carousel-example-generic img {
+  //max-height: 100%;
+}
+
 
 #footer {
     
