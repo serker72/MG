@@ -86,6 +86,69 @@ ul.dropdown-menu {
     background: url('img/slider/right.png') no-repeat right 20% top 50%;
 }
 
+.caption_title {
+    padding: 15px 0 5px 0;
+    background: url('img/caption_bottom.png') no-repeat bottom;
+    color: #313331;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.services_wrapper {
+    padding: 20px 0 20px 180px;
+    margin: 0 auto;
+    height: 210px;
+    /*width: 100%;*/
+}
+
+.services_small_wrapper {
+    float: left;
+    margin: 0 auto;
+    width: 210px;
+    text-align: center;
+}
+
+.service_image {
+}
+
+.service_text {
+    font-size: 16px;
+    padding: 20px 20px;
+}
+
+.about_wrapper {
+    background: url('img/about_bg.png') no-repeat;
+    height: 250px;
+    margin: 0 auto;
+    padding: 10px 110px 25px 110px;
+    /*width: 100%;*/
+}
+
+.about_left {
+    float: left;
+    height: 160px;
+    padding: 25px 0 0 0;
+}
+
+.about_right {
+    float: right;
+    height: 160px;
+    padding: 10px 0 0 0;
+}
+
+.news_wrapper {
+    background-color: #d9dada;
+    height: 290px;
+    margin: 0 auto;
+    padding: 20px 105px 20px 105px;
+    /*width: 100%;*/
+}
+
+
+
 /*   Ёлементы   */
 #wrapper {
     background-color: #269abc;
