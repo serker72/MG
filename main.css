@@ -65,7 +65,7 @@ ul.dropdown-menu {
     display: none;
 }
 
-.carousel-caption {
+#slider1 .carousel-caption {
     width: 490px;
     height: 450px;
     top: 0;
@@ -147,7 +147,88 @@ ul.dropdown-menu {
     /*width: 100%;*/
 }
 
+.news_left {
+    float: left;
+    height: 160px;
+    padding: 10px 0 0 0;
+    width: 540px;
+}
 
+.news_right {
+    float: left;
+    height: 160px;
+    padding: 10px 0 0 0;
+    width: 430px;
+}
+
+.news_date {
+    font-size: 15px;
+}
+
+.news_img {
+    float: left;
+    height: 140px;
+    width: 200px;
+}
+
+.news_text {
+    float: left;
+    font-size: 13px;
+    width: 230px;
+}
+
+.news_text > h5 {
+    font-weight: bold;
+}
+
+.news_advanced_info {
+    background-color: #313331;
+    border-radius: 8px;
+      -moz-border-radius: 8px;
+      -webkit-border-radius: 8px;
+    height: 30px;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 155px;
+}
+
+.news_advanced_info > a {
+    color: #feffff;
+    font-size: 13px;
+}
+
+.trust_wrapper {
+    height: 155px;
+    width: 100%;
+}
+
+
+.footer_wrapper {
+    background-color: #d9dada;
+    height: 240px;
+    width: 100%;
+}
+
+.footer_main {
+    background-color: #313331;
+    color: #fdfdfd;
+    height: 215px;
+    width: 100%;
+}
+
+.footer_separator {
+    height: 5px;
+    width: 100%;
+}
+
+.footer_copyright {
+    background-color: #313331;
+    color: #fdfdfd;
+    height: 30px;
+    padding: 5px 0 5px 105px;
+    width: 100%;
+}
 
 /*   Элементы   */
 #wrapper {
@@ -262,19 +343,20 @@ ul.dropdown-menu {
 /* carousel-example-generic - это id блока со слайдшоу */
 
 /* Здесь задается ширина слайдшоу в пикселях */
-#carousel-example-generic {
-  overflow: hidden; /* Если картинка больше нужной ширины, то она будет скрыта */
-  margin: 0 auto; /* Выравнивание слайдшоу по центру */
-  //max-width: 320px; /* Максимальная ширина слайдшоу в пикселях */
+#slider2 {
+    padding: 25px 20px 0 20px;
+    overflow: hidden; /* Если картинка больше нужной ширины, то она будет скрыта */
+    margin: 0 auto; /* Выравнивание слайдшоу по центру */
+    //max-width: 200px; /* Максимальная ширина слайдшоу в пикселях */
 }
 
 /* Здесь задается высота слайдшоу в пикселях */
-#carousel-example-generic .item {
+#slider2 .item {
   //height: 200px;
 }
 
 /* Данная строчка необходима для того, чтобы изображения было такой же высоты, что и слайд */
-#carousel-example-generic img {
+#slider2 img {
   //max-height: 100%;
 }
 
