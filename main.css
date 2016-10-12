@@ -87,27 +87,28 @@ ul.dropdown-menu {
 }
 
 .caption_title {
-    padding: 15px 0 5px 0;
+    padding: 10px 0 5px 0;
     background: url('img/caption_bottom.png') no-repeat bottom;
     color: #313331;
     font-size: 25px;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .services_wrapper {
-    padding: 20px 0 20px 180px;
+    padding: 20px 0 20px 0px;
     margin: 0 auto;
     height: 210px;
     /*width: 100%;*/
 }
 
 .services_small_wrapper {
-    float: left;
-    margin: 0 auto;
-    width: 210px;
+    font-size: 16px;
+    /*float: left;*/
+    /*margin: 0 auto;*/
+    /*width: 210px;*/
     text-align: center;
 }
 
@@ -115,26 +116,25 @@ ul.dropdown-menu {
 }
 
 .service_text {
-    font-size: 16px;
-    padding: 20px 20px;
+    padding: 20px 10px;
 }
 
 .about_wrapper {
     background: url('img/about_bg.png') no-repeat;
     height: 250px;
     margin: 0 auto;
-    padding: 10px 110px 25px 110px;
+    padding: 0px 110px 25px 110px;
     /*width: 100%;*/
 }
 
 .about_left {
-    float: left;
+    /*float: left;*/
     height: 160px;
     padding: 25px 0 0 0;
 }
 
 .about_right {
-    float: right;
+    /*float: right;*/
     height: 160px;
     padding: 10px 0 0 0;
 }
@@ -143,22 +143,22 @@ ul.dropdown-menu {
     background-color: #d9dada;
     height: 290px;
     margin: 0 auto;
-    padding: 20px 105px 20px 105px;
+    /*padding: 0px 105px 20px 105px;*/
     /*width: 100%;*/
 }
 
 .news_left {
-    float: left;
-    height: 160px;
+    /*float: left;*/
+    /*height: 160px;*/
     padding: 10px 0 0 0;
-    width: 540px;
+    /*width: 540px;*/
 }
 
 .news_right {
-    float: left;
-    height: 160px;
-    padding: 10px 0 0 0;
-    width: 430px;
+    /*float: left;*/
+    /*height: 160px;*/
+    padding: 10px 0 0 50px;
+    /*width: 430px;*/
 }
 
 .news_date {
@@ -166,15 +166,15 @@ ul.dropdown-menu {
 }
 
 .news_img {
-    float: left;
+    /*float: left;*/
     height: 140px;
     width: 200px;
 }
 
 .news_text {
-    float: left;
+    /*float: left;*/
     font-size: 13px;
-    width: 230px;
+    /*width: 230px;*/
 }
 
 .news_text > h5 {
@@ -187,6 +187,7 @@ ul.dropdown-menu {
       -moz-border-radius: 8px;
       -webkit-border-radius: 8px;
     height: 30px;
+    margin-top: 15px;
     padding-top: 5px;
     text-align: center;
     text-transform: uppercase;
@@ -200,26 +201,27 @@ ul.dropdown-menu {
 
 .trust_wrapper {
     height: 155px;
-    width: 100%;
+    /*width: 100%;*/
 }
 
 
 .footer_wrapper {
     background-color: #d9dada;
     height: 240px;
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .footer_main {
     background-color: #313331;
     color: #fdfdfd;
     height: 215px;
-    width: 100%;
+    padding-top: 32px;
+    /*width: 100%;*/
 }
 
 .footer_separator {
     height: 5px;
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .footer_copyright {
@@ -227,7 +229,7 @@ ul.dropdown-menu {
     color: #fdfdfd;
     height: 30px;
     padding: 5px 0 5px 105px;
-    width: 100%;
+    /*width: 100%;*/
 }
 
 /*   Ёлементы   */
