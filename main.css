@@ -208,7 +208,7 @@ ul.dropdown-menu {
 .footer_wrapper {
     background-color: #d9dada;
     height: 240px;
-    /*width: 100%;*/
+    width: 100%;
 }
 
 .footer_main {
@@ -217,6 +217,30 @@ ul.dropdown-menu {
     height: 215px;
     padding-top: 32px;
     /*width: 100%;*/
+}
+
+.footer_main_title {
+    font-size: 15px;
+    padding-bottom: 24px;
+    text-transform: uppercase
+}
+
+.footer_services_list {
+    list-style-image: url('img/services_list_marker.png');
+    padding: 0 0 0 20px;
+}
+
+.footer_services_list > li > a,
+.footer_services_list > li > a:hover,
+.footer_services_list > li > a:focus,
+.footer_contacts_row a
+{
+    color: #fdfdfd;
+    text-decoration: none;
+}
+
+.footer_contacts_row {
+    padding-bottom: 15px;
 }
 
 .footer_separator {
@@ -234,7 +258,6 @@ ul.dropdown-menu {
 
 /*   Ёлементы   */
 #wrapper {
-    background-color: #269abc;
 }
 
 #header {
