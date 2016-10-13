@@ -3,6 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1251"/>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="css/myriadpro.css" rel="stylesheet" type="text/css"/>
     <link href="main.css" rel="stylesheet" type="text/css"/>
     <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.js" type="text/javascript"></script>
@@ -10,21 +11,37 @@
 <body>
     <div id="wrapper" class="container">
         <div id="header">
-            <div id="logo"></div>
-            <div id="contacts">
-                <div id="contacts_phone">+7 495 502 44 88</div>
-                <div id="contacts_mail">info@machinegroup.ru</div>
+            <div class="row">
+                <div class="col-lg-4 logo"></div>
+                <div class="col-lg-4 contacts">
+                    <div class="row contacts_phone">
+                        <div class="col-lg-2"><img src="img/i_phone.png"></div>
+                        <div class="col-lg-10">+7 495 502 44 88</div>
+                    </div>
+                    <div class="row contacts_mail">
+                        <div class="col-lg-2"><img src="img/i_mail.png"></div>
+                        <div class="col-lg-10">info@machinegroup.ru</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 search">
+                    <div class="row">
+                        <div class="col-lg-7 col-lg-offset-4 search_lang">
+                            <ul>
+                                <li><a href="#">RU</a></li>
+                                <li><a href="#">ENG</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-11 col-lg-offset-1" style="background-color: #8a6d3b;">
+                            <input type="text" class="search_str" id="search_str" name="search_str" value="">
+                            <input type="submit" class="search_button" id="search_button" name="search_button">
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="search">
-                <div id="search_lang">
-                    <ul>
-                        <li><a href="#">RU</a></li>
-                        <li><a href="#">ENG</a></li>
-                    </ul>
-                </div>
                 <div id="search_find">
-                    <input type="text" id="search_str" name="search_str" value="">
-                    <input type="submit" id="search_button" name="search_button">
                 </div>
                 <div id="search_call">
                     <a href="#" id="search_call_link">Заказать звонок</a>
@@ -70,7 +87,10 @@
                         <!-- Текст поверх изображения -->
                         <!-- Если текст не нужен следует оставить этот блок пустым, но не удалять его -->
                         <div class="carousel-caption">
-                            Реализация проектов любого уровня сложности
+                            <div>Реализация проектов любого уровня сложности</div>
+                            <div class="carousel-caption-advanced-info">
+                                <a href="#">Узнать больше</a>
+                            </div>
                         </div>
                     </div>
                     <!-- Слайд 2 -->
@@ -80,6 +100,9 @@
                         <!-- Если текст не нужен следует оставить этот блок пустым, но не удалять его -->
                         <div class="carousel-caption">
                             Строительство промышленных объектов под "ключ"
+                            <div class="carousel-caption-advanced-info">
+                                <a href="#">Узнать больше</a>
+                            </div>
                         </div>
                     </div>
                     <!-- Слайд 3 -->
@@ -89,6 +112,9 @@
                         <!-- Если текст не нужен следует оставить этот блок пустым, но не удалять его -->
                         <div class="carousel-caption">
                             Полное соответствие<br>Ф3 223, Ф3 444
+                            <div class="carousel-caption-advanced-info">
+                                <a href="#">Узнать больше</a>
+                            </div>
                         </div>
                     </div>
                     <!-- Кнопки управления слайдщоу (стрелки влево и вправо) -->
@@ -127,8 +153,8 @@
             <!-- Блок "О компании" -->
             <div class="row about_wrapper">
                 <div class="col-lg-12 caption_title">О компании</div>
-                <div class="col-lg-5 about_left"><img src="img/about_left.png"></div>
-                <div class="col-lg-7 about_right"><img src="img/about_right.png"></div>
+                <div class="col-lg-4 about_left"><img src="img/about_left.png"></div>
+                <div class="col-lg-8 about_right"><img src="img/about_right.png"></div>
             </div>
             <!-- Блок "Новости" -->
             <div class="row news_wrapper">
@@ -220,7 +246,11 @@
                     </div>
                 </div>
                 <div class="col-lg-12 footer_separator"></div>
-                <div class="col-lg-12 footer_copyright">&copy; Copyright 2016 Machine Group</div>
+                <div class="col-lg-12 footer_copyright">
+                    <div class="col-lg-11 col-lg-offset-1">
+                        <div>&copy; Copyright 2016 Machine Group</div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="clearfix">&nbsp;</div>

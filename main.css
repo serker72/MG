@@ -6,6 +6,7 @@
  *****************************************************************************/
 
 body {
+    font-family: MyriadPro;
 }
 
 /*   Классы   */
@@ -15,6 +16,81 @@ body {
     width: 1200px;
     font-family: MyriadPro;
 }
+
+.logo {
+    height: 145px;
+    background: url('img/logo.png') no-repeat top 24px left 100px;
+}
+
+.contacts {
+    font-size: 17px;
+    height: 145px;
+    padding: 40px 0 0 30px;
+}
+
+.contacts_phone {
+    height: 45px;
+}
+
+.contacts_mail {
+    height: 65px;
+}
+
+.search {
+    height: 145px;
+    /*padding: 0 0 0 35px;*/
+}
+
+.search_lang {
+    height: 33px;
+    /*width: 244px;*/
+    /*text-align: right;*/
+}
+
+.search_lang ul {
+}
+
+.search_lang ul li {
+    background: url('img/lang_splitter.png') no-repeat top 0px left 0px;
+    display: inline;
+    list-style-type: none;
+    font-size: 15px;
+    padding: 8px 8px 5px 11px;
+}
+
+.search_lang ul li:first-child {
+    background: none;
+}
+
+.search_lang ul li:last-child {
+    padding: 8px 2px 5px 11px;
+}
+
+.search_lang ul li a,
+.search_lang ul li a:hover,
+.search_lang ul li a:focus
+{
+    color: #2b2a29;
+    text-decoration: none;
+}
+
+.search_find {
+    height: 44px;
+    padding-top: 5px;
+}
+
+.search_str {
+    width: 200px;
+    height: 38px;
+    background-color: #f0efeb;
+}
+
+.search_button {
+    width: 38px;
+    height: 38px;
+    background: url('img/search.png') no-repeat;
+}
+
 
 .navbar-nav > li {
 }
@@ -66,16 +142,37 @@ ul.dropdown-menu {
 }
 
 #slider1 .carousel-caption {
-    width: 490px;
+    width: 500px;
     height: 450px;
     top: 0;
-    left: 588px;
+    left: 598px;
     padding: 120px 40px 25px 35px;
     background: url('img/slider/caption_background.png') no-repeat;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bold;
     text-align: left;
     text-transform: uppercase;
+}
+
+.carousel-caption-advanced-info {
+    background-color: #eb3844;
+    border-radius: 8px;
+      -moz-border-radius: 8px;
+      -webkit-border-radius: 8px;
+    bottom: 25px;
+    font-size: 16px;
+    height: 40px;
+    padding-top: 10px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    width: 300px;
+}
+
+.carousel-caption-advanced-info a {
+    color: #fce8e9;
+    font-weight: normal;
+    text-decoration: none;
 }
 
 .carousel-control.left {
@@ -90,7 +187,7 @@ ul.dropdown-menu {
     padding: 10px 0 5px 0;
     background: url('img/caption_bottom.png') no-repeat bottom;
     color: #313331;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
@@ -136,7 +233,7 @@ ul.dropdown-menu {
 .about_right {
     /*float: right;*/
     height: 160px;
-    padding: 10px 0 0 0;
+    padding: 10px 0 0 40px;
 }
 
 .news_wrapper {
@@ -206,7 +303,6 @@ ul.dropdown-menu {
 
 
 .footer_wrapper {
-    background-color: #d9dada;
     height: 240px;
     width: 100%;
 }
@@ -231,11 +327,18 @@ ul.dropdown-menu {
 }
 
 .footer_services_list > li > a,
-.footer_services_list > li > a:hover,
-.footer_services_list > li > a:focus,
 .footer_contacts_row a
 {
     color: #fdfdfd;
+    text-decoration: none;
+}
+
+.footer_services_list > li > a:hover,
+.footer_services_list > li > a:focus,
+.footer_contacts_row a:hover,
+.footer_contacts_row a:focus
+{
+    color: #c73741;
     text-decoration: none;
 }
 
@@ -244,7 +347,8 @@ ul.dropdown-menu {
 }
 
 .footer_separator {
-    height: 5px;
+    background-color: #d9dada;
+    height: 2px;
     /*width: 100%;*/
 }
 
@@ -252,7 +356,7 @@ ul.dropdown-menu {
     background-color: #313331;
     color: #fdfdfd;
     height: 30px;
-    padding: 5px 0 5px 105px;
+    /*padding: 5px 0 5px 105px;*/
     /*width: 100%;*/
 }
 
@@ -298,8 +402,8 @@ ul.dropdown-menu {
 
 #search_lang {
     height: 33px;
-    width: 244px;
-    text-align: right;
+    /*width: 244px;*/
+    /*text-align: right;*/
 }
 
 #search_lang ul {
@@ -327,17 +431,6 @@ ul.dropdown-menu {
     padding-top: 5px;
 }
 
-#search_str {
-    width: 200px;
-    height: 38px;
-    background-color: #f0efeb;
-}
-
-#search_button {
-    width: 40px;
-    height: 38px;
-    background: url('img/search.png') no-repeat;
-}
 
 #search_call {
     padding-top: 20px;
