@@ -6,20 +6,23 @@
  *****************************************************************************/
 
 body {
-    font-family: MyriadPro;
+    font-family: MyriadProRegular;
 }
 
-/*    лассы   */
-.container {
+/************************************
+ *    лассы   
+ ************************************/
+.container-fluid {
     padding-right: 0px;
     padding-left: 0px;
     width: 1200px;
-    font-family: MyriadPro;
+    font-family: MyriadProRegular;
 }
 
 .logo {
     height: 145px;
-    background: url('img/logo.png') no-repeat top 24px left 100px;
+    padding: 24px 0 0 100px;
+    /*background: url('img/logo.png') no-repeat top 24px left 100px;*/
 }
 
 .contacts {
@@ -86,18 +89,30 @@ body {
 }
 
 .search_button {
-    width: 38px;
-    height: 38px;
-    background: url('img/search.png') no-repeat;
+    position: absolute;
 }
 
+.search_call {
+    height: 68px;
+    padding-top: 20px;
+    width: 244px;
+}
+
+.search_call_link {
+    background-color: #eb3844;
+    color: #feffff;
+    font-size: 17px;
+    padding: 13px 50px 12px 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
 
 .navbar-nav > li {
 }
 
 .navbar-nav > li > a {
     text-transform: uppercase;
-    font-size: 17px;
+    font-size: 20px;
     color: #feffff;
     height: 75px;
     padding-top: 27px;
@@ -160,9 +175,9 @@ ul.dropdown-menu {
       -moz-border-radius: 8px;
       -webkit-border-radius: 8px;
     bottom: 25px;
-    font-size: 16px;
+    font-size: 20px;
     height: 40px;
-    padding-top: 10px;
+    padding-top: 5px;
     position: absolute;
     text-align: center;
     text-transform: uppercase;
@@ -195,17 +210,15 @@ ul.dropdown-menu {
 }
 
 .services_wrapper {
-    padding: 20px 0 20px 0px;
+    padding: 0px 0 20px 0px;
     margin: 0 auto;
-    height: 210px;
+    height: 270px;
     /*width: 100%;*/
 }
 
 .services_small_wrapper {
     font-size: 16px;
-    /*float: left;*/
-    /*margin: 0 auto;*/
-    /*width: 210px;*/
+    padding-top: 15px;
     text-align: center;
 }
 
@@ -296,6 +309,13 @@ ul.dropdown-menu {
     font-size: 13px;
 }
 
+.news_advanced_info > a:hover,
+.news_advanced_info > a:focus
+{
+    color: #c73741;
+    text-decoration: none;
+}
+
 .trust_wrapper {
     height: 155px;
     /*width: 100%;*/
@@ -319,6 +339,10 @@ ul.dropdown-menu {
     font-size: 15px;
     padding-bottom: 24px;
     text-transform: uppercase
+}
+
+.footer_main_text {
+    font-size: 13px;
 }
 
 .footer_services_list {
@@ -360,90 +384,69 @@ ul.dropdown-menu {
     /*width: 100%;*/
 }
 
-/*   Ёлементы   */
+.breadcrumbs {
+    
+}
+
+
+/*  About page class  */
+.about_page_wrapper {
+    background: url('img/about_page_bg.png') no-repeat;
+    height: 884px;
+}
+
+.about-text-1 {
+    /*font-family: FranklinGothicMediumCondRegular;*/
+    font-size: 22px;
+    font-weight: normal;
+    padding: 155px 70px 110px 85px;
+}
+
+.about-text-2 {
+    /*background-color: #449d44;*/
+    font-size: 17px;
+    font-weight: normal;
+    padding: 0px 0px 0px 40px;
+}
+
+.about-text-3 {
+    /*background-color: #449d44;*/
+    color: #feffff;
+    font-size: 24px;
+    font-weight: normal;
+    padding: 0px 0px 0px 85px;
+    text-transform: uppercase;
+}
+
+.about-text-4 {
+    color: #feffff;
+    font-size: 17px;
+    font-weight: normal;
+    padding: 0px 20px 0px 40px;
+}
+
+.about-text-5 {
+    color: #feffff;
+    font-size: 17px;
+    font-weight: normal;
+    padding: 0px 40px 0px 80px;
+}
+
+.about-text-6 {
+    color: #feffff;
+    font-size: 17px;
+    font-weight: normal;
+    padding: 0px 0px 0px 80px;
+}
+
+/************************************
+ * #ID - Ёлементы
+ ************************************/
 #wrapper {
 }
 
 #header {
     height: 220px;
-}
-
-#logo {
-    float: left;
-    width: 470px;
-    height: 145px;
-    background: url('img/logo.png') no-repeat top 24px left 100px;
-}
-
-#contacts {
-    float: left;
-    height: 145px;
-    width: 370px;
-    font-size: 17px;
-}
-
-#contacts_phone {
-    height: 80px;
-    padding: 45px 0 0 48px;
-    background: url('img/i_phone.png') no-repeat top 40px left 0px;
-}
-
-#contacts_mail {
-    height: 65px;
-    padding: 10px 0 0 48px;
-    background: url('img/i_mail.png') no-repeat top 10px left 0px;
-}
-
-#search {
-    float: right;
-    width: 360px;
-    height: 145px;
-}
-
-#search_lang {
-    height: 33px;
-    /*width: 244px;*/
-    /*text-align: right;*/
-}
-
-#search_lang ul {
-}
-
-#search_lang ul li {
-    background: url('img/lang_splitter.png') no-repeat top 0px left 0px;
-    display: inline;
-    list-style-type: none;
-    font-size: 15px;
-    padding: 8px 8px 5px 11px;
-}
-
-#search_lang ul li:first-child {
-    background: none;
-}
-
-#search_lang ul li:last-child {
-    padding: 8px 2px 5px 11px;
-}
-
-#search_find {
-    height: 44px;
-    width: 244px;
-    padding-top: 5px;
-}
-
-
-#search_call {
-    padding-top: 20px;
-    height: 68px;
-    width: 244px;
-}
-
-#search_call_link {
-    padding: 13px 38px 12px 50px;
-    background-color: #eb3844;
-    font-size: 17px;
-    color: #feffff;
-    text-transform: uppercase;
 }
 
 #main_menu {
@@ -458,7 +461,7 @@ ul.dropdown-menu {
     
 }
 
-/* carousel-example-generic - это id блока со слайдшоу */
+/* slider2 - это id блока со слайдшоу */
 
 /* «десь задаетс€ ширина слайдшоу в пиксел€х */
 #slider2 {
@@ -478,8 +481,4 @@ ul.dropdown-menu {
   //max-height: 100%;
 }
 
-
-#footer {
-    
-}
 

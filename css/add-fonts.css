@@ -64,3 +64,11 @@
     font-style: normal;
     font-weight: normal;
 }
+
+/* font-family: "FranklinGothicMediumCondRegular"; */
+@font-face {
+    font-family: "FranklinGothicMediumCondRegular";
+    src: url("../fonts/FranklinGothicMediumCondRegular/FranklinGothicMediumCondRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
