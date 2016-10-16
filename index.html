@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<!--
+/*****************************************************************************
+*  Сайт Machine Group
+*
+*  Author: Sergey Kerimov
+*  e-mail: serker72@gmail.com
+*****************************************************************************/
+-->
 <html>
 <head>
     <title>Главная</title>
@@ -8,6 +16,7 @@
     <link href="main.css" rel="stylesheet" type="text/css"/>
     <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/ksk.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="wrapper" class="container-fluid">
@@ -44,7 +53,7 @@
                     <div class="row-fluid">
                         <div class="col-lg-11 col-lg-offset-1">
                             <div class="search_call">
-                                <a href="#" class="search_call_link">Заказать звонок</a>
+                                <a href="javascript:OpenCallDialog();" class="search_call_link">Заказать звонок</a>
                             </div>
                         </div>
                     </div>
@@ -55,23 +64,23 @@
                 <ul class="nav navbar-nav">
                     <li><a href="#">Главная</a></li>
                     <li><a href="/about.html">О компании</a></li>
-                    <li><a href="#">Услуги</a></li>
+                    <li><a href="/services.html">Услуги</a></li>
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Каталог<span class="caret"></span></a>
+                        <a class="dropdown" href="/catalog.html">Каталог<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Токарные центры</a></li>
-                            <li><a href="#">Фрезерные центры</a></li>
-                            <li><a href="#">Сверлильные станки</a></li>
-                            <li><a href="#">Шлифовальные станки</a></li>
-                            <li><a href="#">Листообработка</a></li>
-                            <li><a href="#">Гальваника</a></li>
-                            <li><a href="#">Оборудование для литья</a></li>
-                            <li><a href="#">Термическая обработка</a></li>
-                            <li><a href="#">Измерительное оборудование</a></li>
+                            <li><a href="/category.html?id=1">Токарные центры</a></li>
+                            <li><a href="/category.html?id=2">Фрезерные центры</a></li>
+                            <li><a href="/category.html?id=3">Сверлильные станки</a></li>
+                            <li><a href="/category.html?id=4">Шлифовальные станки</a></li>
+                            <li><a href="/category.html?id=5">Листообработка</a></li>
+                            <li><a href="/category.html?id=6">Гальваника</a></li>
+                            <li><a href="/category.html?id=7">Оборудование для литья</a></li>
+                            <li><a href="/category.html?id=8">Термическая обработка</a></li>
+                            <li><a href="/category.html?id=9">Измерительное оборудование</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="/news.html">Новости</a></li>
+                    <li><a href="/contacts.html">Контакты</a></li>
                 </ul>
             </div>
         </div>
@@ -257,6 +266,23 @@
             </div>
         </div>
         <div class="clearfix">&nbsp;</div>
+    </div>
+    <!--  Modal  -->
+    <div id="callDialog" class="callDialogModal">
+        <div id="callDialogModal_close" class="callDialogModal_close">
+            <span><img src="img/modal_close.png"></span>
+            <div style="clear: both;"></div>
+        </div>
+        <div class="callDialogModal_title"><p>Оставьте заявку,<br>и мы перезвоним Вам</p></div>
+        <div class="postDialogModal_form">
+            <form id="CallDialogForm" method="post" action="">
+                <label for="CallDialogName">Имя</label><br>
+                <input type="text" class="PostDialogInput" id="CallDialogName" value=""><br>
+                <label for="CallDialogPhone">Телефон</label><br>
+                <input type="text" class="PostDialogInput" id="CallDialogPhone" value="">
+            </form>
+        </div>
+        <div class="PostDialogSubmit"><a id="CallDialogSubmit" href="#">Отправить</a></div>
     </div>
 </body>
 </html>
