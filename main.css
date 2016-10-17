@@ -39,6 +39,18 @@ body {
     height: 65px;
 }
 
+.contacts_mail > div > a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contacts_mail > div > a:hover,
+.contacts_mail > div > a:focus
+{
+    color: #c73741;
+    text-decoration: none;
+}
+
 .search {
     height: 145px;
     /*padding: 0 0 0 35px;*/
@@ -107,12 +119,19 @@ body {
     text-transform: uppercase;
 }
 
+a.search_call_link:hover,
+a.search_call_link:focus
+{
+    color: #2b2a29;
+    text-decoration: none;
+}
+
 .navbar-nav > li {
 }
 
 .navbar-nav > li > a {
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 18px;
     color: #feffff;
     height: 75px;
     padding-top: 27px;
@@ -194,6 +213,13 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
     text-decoration: none;
 }
 
+.carousel-caption-advanced-info a:hover,
+.carousel-caption-advanced-info a:focus
+{
+    color: #2b2a29;
+    text-decoration: none;
+}
+
 .carousel-control.left {
     background: url('img/slider/left.png') no-repeat left 20% top 50%;
 }
@@ -212,6 +238,18 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
     text-transform: uppercase;
     /*width: 100%;*/
 }
+
+.caption_title a {
+    color: #313331;
+    text-decoration: none;
+}
+
+.caption_title a:hover,
+.caption_title a:focus {
+    color: #c73741;
+    text-decoration: none;
+}
+
 
 .services_wrapper {
     padding: 0px 0 20px 0px;
@@ -295,6 +333,16 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
     font-weight: bold;
 }
 
+.news_text > h5 > a {
+    color: #333;
+}
+
+.news_text > h5 > a:hover,
+.news_text > h5 > a:focus
+{
+    color: #c73741;
+}
+
 .news_advanced_info {
     background-color: #313331;
     border-radius: 8px;
@@ -338,10 +386,19 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
     /*width: 100%;*/
 }
 
-.footer_main_title {
+.footer_main_title,
+.footer_main_title a {
+    color: #fdfdfd;
     font-size: 15px;
     padding-bottom: 24px;
+    text-decoration: none;
     text-transform: uppercase
+}
+
+.footer_main_title a:hover,
+.footer_main_title a:focus
+{
+    color: #c73741;
 }
 
 .footer_main_text {
